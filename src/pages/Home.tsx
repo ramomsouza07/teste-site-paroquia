@@ -1,9 +1,21 @@
+import imgMatriz from "../assets/matriz/foto-matriz.jpg"
+import imgSeb from "../assets/matriz/temp.png"
+import imgVic from "../assets/matriz/temp.png"
+
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import Card from "../components/Cards";
 import ChurchCard from "../components/ChurchCards";
 
 export default function Home(){
+    
+    // Função para rolar a tela suavemente
+    const scrollToComunidades = () => {
+        const element = document.getElementById('comunidades');
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return(
         <>
             <Header/>
@@ -14,7 +26,7 @@ export default function Home(){
             <section className="bg-gradient-to-b from-marrom-escuro to-marrom-claro text-branco text-center py-[100px] px-[20px]">
                 <div className="max-w-[1200px] mx-auto">
                     
-                    <h1 className="text-[56px] mb-[20px] text-branco [text-shadow:1px_1px_3px_rgba(0,0,0,0.3)] leading-tight">
+                    <h1 className="text-[40px] md:text-[56px] mb-[20px] text-branco [text-shadow:1px_1px_3px_rgba(0,0,0,0.3)] leading-tight">
                         Igreja Matriz de São Fidélis de Sigmaringa
                     </h1>
                     
@@ -23,39 +35,45 @@ export default function Home(){
                     </p>
                     
                     {/* Botão Principal */}
-                    <a 
-                        href="#comunidades" 
-                        className="bg-mostarda text-marrom-escuro py-[12px] px-[30px] text-[18px] font-bold rounded-[5px] inline-block transition-colors duration-300 hover:bg-marrom-claro hover:text-branco"
+                    <button 
+                        onClick={scrollToComunidades}
+                        className="bg-mostarda text-marrom-escuro py-[12px] px-[30px] text-[18px] font-bold rounded-[5px] inline-block transition-colors duration-300 hover:bg-marrom-claro hover:text-branco cursor-pointer"
                     >
                         Conheça Nossas Comunidades
-                    </a>
+                    </button>
 
                 </div>
             </section>            
 
-            <div className="flex gap-20 justify-center pt-[20px]">
-                <Card title="Horários de Missas">
-                    <p>Domingo: 8h, 10h e 19h</p>
-                    <p>Segunda a Sexta: 6h</p>
-                    <p>Sábado: 17h e 19h</p>
-                </Card>
-                <Card title="Atendimento de Confissões">
-                    <p>Quinta: 14h até 16h</p>
-                    <p>Sexta: 9h até 11h30</p>
-                </Card>
-            </div>
+            {/* SEÇÃO AGENDA PAROQUIAL (Google Calendar) */}
+            <section className="py-[60px] px-[20px] max-w-[900px] mx-auto text-center">
+                
+                <h2 className="text-marrom-escuro text-[32px] mb-[30px]">
+                    Agenda Paroquial
+                </h2>
+                
+                {/* O container protege o iframe e arredonda as bordas */}
+                <div className="w-full overflow-hidden rounded-[10px] shadow-[0_5px_15px_rgba(0,0,0,0.1)] bg-white">
+                    <iframe 
+                        src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FSao_Paulo&showPrint=0&showTabs=0&showNav=0&showTz=0&mode=AGENDA&src=ZDk5NmM1OTIxMjJhZjFkNWM0Zjc1MzNiN2U4NGFmYzBmOGEwOTg0NzM1YjNhZWVkNWQ3YTZkMTQ0ZDI3NWJhMkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23795548" 
+                        className="w-full border-0 h-[400px] md:h-[600px]" 
+                        frameBorder="0" 
+                        scrolling="no"
+                        title="Calendário da Paróquia"
+                    ></iframe>
+                </div>
+
+            </section>
 
             {/* SEÇÃO NOSSA HISTÓRIA E DEVOÇÃO */}
             <section className="bg-branco py-[60px] px-[20px] text-center max-w-[900px] my-[40px] mx-auto rounded-[10px] shadow-[0_4px_10px_rgba(0,0,0,0.05)]">
                 
                 <div className="flex flex-col items-center">
                     
-                    {/* Título */}
                     <h2 className="text-marrom-escuro text-[32px] mb-[20px]">
                         Nossa História e Devoção
                     </h2>
                     
-                    {/* Parágrafos de História */}
                     <p className="text-cinza-escuro text-[18px] mb-[15px]">
                         A Igreja Matriz de São Fidélis de Sigmaringa teve sua construção iniciada em 1799 e foi concluída em 1809 pelos frades capuchinhos.
                     </p>
@@ -63,7 +81,6 @@ export default function Home(){
                         Com linhas arquitetônicas de reflexo italiano e gosto toscano em sua construção em cruz, o monumental templo chama a atenção pela grandiosidade de sua cúpula e carrega mais de dois séculos de fé em nossa cidade.
                     </p>
                     
-                    {/* Detalhes da Paróquia (com linha divisória em cima) */}
                     <div className="mt-[30px] pt-[20px] border-t border-marrom-claro/30 w-full max-w-[500px] font-medium text-marrom-escuro">
                         <p className="text-[18px] mb-[10px]">
                             <span className="text-marrom-claro mr-2">✝</span> 
@@ -97,24 +114,27 @@ export default function Home(){
                 <div className="flex justify-center gap-[30px] flex-wrap">
                     
                     <ChurchCard 
-                        imageText="Foto da Matriz"
+                        imageUrl={imgMatriz} 
+                        imageText="Foto da fachada da Igreja Matriz de São Fidélis"
                         title="Matriz São Fidélis"
                         description="Santuário histórico e coração de nossa paróquia."
                         linkUrl="/matriz"
                     />
 
                     <ChurchCard 
+                        imageUrl={imgSeb} 
                         imageText="Foto da Igreja"
                         title="Capela São Sebastião"
                         description="Comunidade localizada no bairro Ipuca."
-                        linkUrl="pages/igreja-sebastiao.html"
+                        linkUrl="/igreja-sebastiao"
                     />
 
                     <ChurchCard 
+                        imageUrl={imgVic} 
                         imageText="Foto da Igreja"
                         title="Capela São Vicente"
                         description="Breve descrição da comunidade."
-                        linkUrl="pages/igreja-vicente.html"
+                        linkUrl="/igreja-vicente"
                     />
 
                 </div>

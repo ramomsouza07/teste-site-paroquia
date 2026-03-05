@@ -1,21 +1,23 @@
 import { HashRouter, Routes, Route } from 'react-router-dom'
+
+import ScrollToTop from './components/ScrollToTop';
+
 import Home from './pages/Home'
 import Matriz from './pages/churchs/Matriz'
+import Services from './pages/Services'
 import Contacts from './pages/Contacts'
-import Header from './components/Header'
-import Footer from './components/Footer'
 
 export default function RoutesApp(){
     return(
-        
         <HashRouter>
-            <Header/>
+            <ScrollToTop />
             <Routes>
                 <Route path='/' element={ <Home/> }/>
                 <Route path='/matriz' element={<Matriz/>} />
+
+                <Route path="/servicos" element={<Services />} />
                 <Route path='/contatos' element={<Contacts/>} />
             </Routes>
-            <Footer/>
         </HashRouter>
     )
 }

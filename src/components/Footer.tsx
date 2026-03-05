@@ -18,7 +18,7 @@ export default function Footer() {
             
             {/* O border-white/10 cria exatamente aquele efeito do rgba(255,255,255,0.1) */}
             <div className="mt-[30px] pt-[20px] border-t border-white/10 text-[14px] text-[#aaaaaa]">
-                <p>&copy; 2026 Paróquia São Fidélis. Todos os direitos reservados.</p>
+                <p>&copy; 2026 Santuário São Fidélis de Sigmaringa. Todos os direitos reservados.</p>
             </div>
         </footer>
     );
