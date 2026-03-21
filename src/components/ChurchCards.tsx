@@ -20,7 +20,7 @@ export default function ChurchCard({ imageUrl, imageText, title, description, li
             <img 
                 src={imageUrl} 
                 alt={imageText} 
-                className="h-[150px] w-full rounded-[5px] object-cover mb-[15px]" 
+                className="w-full h-[220px] object-cover object-center rounded-[8px]" 
             />
             
             <h3 className="text-center text-[#331905] text-[24px] mb-[10px]">

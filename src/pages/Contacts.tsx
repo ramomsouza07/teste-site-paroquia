@@ -86,7 +86,7 @@ export default function Contatos() {
 
                             {/* Altere o link do mailto para o e-mail real da PASCOM */}
                             <a 
-                                href="mailto:pascom@saofidelis.com.br" 
+                                href="mailto:matrizdesaofidelis@gmail.com" 
                                 className="w-full bg-mostarda text-marrom-escuro text-center py-[12px] px-[20px] rounded-[5px] font-bold text-[18px] transition-all duration-300 hover:bg-marrom-claro hover:text-branco hover:shadow-lg flex items-center justify-center gap-[10px]"
                             >
                                 <i className="fa-solid fa-envelope text-[20px]"></i>

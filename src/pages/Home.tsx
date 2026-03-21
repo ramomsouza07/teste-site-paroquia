@@ -1,6 +1,8 @@
+import temp from "../assets/matriz/temp.png"
 import imgMatriz from "../assets/matriz/foto-matriz.jpg"
-import imgSeb from "../assets/matriz/temp.png"
-import imgVic from "../assets/matriz/temp.png"
+import imgSeb from "../assets/sao_sebastiao/sao_sebastiao.png"
+import imgVic from "../assets/sao_vicente/sao_vicente_2.png"
+import imgFamilia from "../assets/sagrada_familia/sagrada_familia.png"
 
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -75,13 +77,23 @@ export default function Home(){
                     </h2>
                     
                     <p className="text-cinza-escuro text-[18px] mb-[15px]">
-                        A Igreja Matriz de São Fidélis de Sigmaringa teve sua construção iniciada em 1799 e foi concluída em 1809 pelos frades capuchinhos.
-                    </p>
-                    <p className="text-cinza-escuro text-[18px] mb-[15px]">
-                        Com linhas arquitetônicas de reflexo italiano e gosto toscano em sua construção em cruz, o monumental templo chama a atenção pela grandiosidade de sua cúpula e carrega mais de dois séculos de fé em nossa cidade.
+                        A Igreja Matriz de São Fidélis de Sigmaringa teve sua construção iniciada em 1799 e foi concluída em 1809 pelos frades capuchinhos. Com linhas arquitetônicas de reflexo italiano e gosto toscano em sua construção em cruz, o monumental templo chama a atenção pela grandiosidade de sua cúpula e carrega mais de dois séculos de fé em nossa cidade.
                     </p>
                     
-                    <div className="mt-[30px] pt-[20px] border-t border-marrom-claro/30 w-full max-w-[500px] font-medium text-marrom-escuro">
+                    {/* VIDEO DO YOUTUBE AQUI */}
+                    <div className="w-full max-w-[700px] mt-[30px] rounded-[10px] overflow-hidden shadow-md">
+                        <iframe 
+                            className="w-full aspect-video"
+                            src="https://www.youtube-nocookie.com/embed/LrU9ixrYcHw?si=GetzsE__RAL8xNg3" 
+                            title="YouTube video player" 
+                            frameBorder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerPolicy="strict-origin-when-cross-origin" 
+                            allowFullScreen
+                        ></iframe>
+                    </div>
+                    
+                    <div className="mt-[40px] pt-[20px] border-t border-marrom-claro/30 w-full max-w-[500px] font-medium text-marrom-escuro">
                         <p className="text-[18px] mb-[10px]">
                             <span className="text-marrom-claro mr-2">✝</span> 
                             Diocese de Campos dos Goytacazes
@@ -126,7 +138,7 @@ export default function Home(){
                         imageText="Foto da Igreja"
                         title="Capela São Sebastião"
                         description="Comunidade localizada no bairro Ipuca."
-                        linkUrl="/igreja-sebastiao"
+                        linkUrl="/capela-sao-sebastiao"
                     />
 
                     <ChurchCard 
@@ -134,55 +146,55 @@ export default function Home(){
                         imageText="Foto da Igreja"
                         title="Capela São Vicente"
                         description="Comunidade localizada no bairro São Vicente."
-                        linkUrl="/igreja-vicente"
+                        linkUrl="/capela-sao-vicente"
                     />
 
                     <ChurchCard 
-                        imageUrl={imgVic} 
+                        imageUrl={temp} 
                         imageText="Foto da Igreja"
                         title="Capela Cristo Rei"
                         description="Comunidade localizada no bairro Cristo Rei."
-                        linkUrl="/igreja-vicente"
+                        linkUrl="/capela-cristo-rei"
                     />
 
                     <ChurchCard 
-                        imageUrl={imgVic} 
+                        imageUrl={temp} 
                         imageText="Foto da Igreja"
                         title="Capela Santo Amaro"
                         description="TEM QUE VER ISSO AI"
-                        linkUrl="/igreja-vicente"
+                        linkUrl="/capela-santo-amaro"
                     />
 
                     <ChurchCard 
-                        imageUrl={imgVic} 
+                        imageUrl={temp} 
                         imageText="Foto da Igreja"
                         title="Capela São José"
                         description="Comunidade localizada no bairro Centro"
-                        linkUrl="/igreja-vicente"
+                        linkUrl="/capela-sao-jose"
                     />
 
                     <ChurchCard 
-                        imageUrl={imgVic} 
+                        imageUrl={temp} 
                         imageText="Foto da Igreja"
                         title="Capela Nossa Senhora dos Milagres"
                         description="Comunidade localizada no distrito de Valão dos Milagres"
-                        linkUrl="/igreja-vicente"
+                        linkUrl="/capela-nossa-senhora-milagres"
                     />
 
                     <ChurchCard 
-                        imageUrl={imgVic} 
+                        imageUrl={imgFamilia} 
                         imageText="Foto da Igreja"
                         title="Capela Sagrada Família"
                         description="Breve descrição da comunidade."
-                        linkUrl="/igreja-vicente"
+                        linkUrl="/capela-sagrada-familia"
                     />
 
                     <ChurchCard 
-                        imageUrl={imgVic} 
+                        imageUrl={temp} 
                         imageText="Foto da Igreja"
                         title="Capela Nossa Senhora de Fátima"
                         description="Comunidade localizada no bairro Coroados."
-                        linkUrl="/igreja-vicente"
+                        linkUrl="/capela-nossa-senhora-fatima"
                     />
                 </div>
             </section>
