@@ -105,7 +105,7 @@ export default function Contatos() {
                     <div className="bg-branco p-[20px] rounded-[10px] shadow-[0_4px_15px_rgba(0,0,0,0.05)] text-center">
                         <p className="text-cinza-escuro text-[18px] mb-[20px]">
                             <i className="fa-solid fa-location-dot text-marrom-claro mr-[10px]"></i>
-                            Praça São Fidélis, s/n - Centro, São Fidélis - RJ, 28400-000
+                            Praça Guilherme Tito de Azevedo, s/n - Centro, São Fidélis - RJ, 28400-000
                         </p>
                         
                         {/* Iframe do Google Maps da Praça de São Fidélis */}
