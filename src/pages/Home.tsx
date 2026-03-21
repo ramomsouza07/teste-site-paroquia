@@ -53,7 +53,7 @@ export default function Home(){
                 </h2>
                 
                 {/* O container protege o iframe e arredonda as bordas */}
-                <div className="w-full overflow-hidden rounded-[10px] shadow-[0_5px_15px_rgba(0,0,0,0.1)] bg-white">
+                <div className="w-full overflow-hidden rounded-[10px] shadow-[0_5px_15px_rgba(0,0,0,0.1)] bg-branco">
                     <iframe 
                         src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FSao_Paulo&showPrint=0&showTabs=0&showNav=0&showTz=0&mode=AGENDA&src=ZDk5NmM1OTIxMjJhZjFkNWM0Zjc1MzNiN2U4NGFmYzBmOGEwOTg0NzM1YjNhZWVkNWQ3YTZkMTQ0ZDI3NWJhMkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23795548" 
                         className="w-full border-0 h-[400px] md:h-[600px]" 
@@ -133,16 +133,63 @@ export default function Home(){
                         imageUrl={imgVic} 
                         imageText="Foto da Igreja"
                         title="Capela São Vicente"
+                        description="Comunidade localizada no bairro São Vicente."
+                        linkUrl="/igreja-vicente"
+                    />
+
+                    <ChurchCard 
+                        imageUrl={imgVic} 
+                        imageText="Foto da Igreja"
+                        title="Capela Cristo Rei"
+                        description="Comunidade localizada no bairro Cristo Rei."
+                        linkUrl="/igreja-vicente"
+                    />
+
+                    <ChurchCard 
+                        imageUrl={imgVic} 
+                        imageText="Foto da Igreja"
+                        title="Capela Santo Amaro"
+                        description="TEM QUE VER ISSO AI"
+                        linkUrl="/igreja-vicente"
+                    />
+
+                    <ChurchCard 
+                        imageUrl={imgVic} 
+                        imageText="Foto da Igreja"
+                        title="Capela São José"
+                        description="Comunidade localizada no bairro Centro"
+                        linkUrl="/igreja-vicente"
+                    />
+
+                    <ChurchCard 
+                        imageUrl={imgVic} 
+                        imageText="Foto da Igreja"
+                        title="Capela Nossa Senhora dos Milagres"
+                        description="Comunidade localizada no distrito de Valão dos Milagres"
+                        linkUrl="/igreja-vicente"
+                    />
+
+                    <ChurchCard 
+                        imageUrl={imgVic} 
+                        imageText="Foto da Igreja"
+                        title="Capela Sagrada Família"
                         description="Breve descrição da comunidade."
                         linkUrl="/igreja-vicente"
                     />
 
+                    <ChurchCard 
+                        imageUrl={imgVic} 
+                        imageText="Foto da Igreja"
+                        title="Capela Nossa Senhora de Fátima"
+                        description="Comunidade localizada no bairro Coroados."
+                        linkUrl="/igreja-vicente"
+                    />
                 </div>
             </section>
 
             <section id="dizimo" className="py-[60px] px-[20px] text-center">
                 
-                <div className="max-w-[800px] mx-auto bg-white p-[40px] rounded-[10px] shadow-[0_5px_15px_rgba(0,0,0,0.5)]">
+                <div className="max-w-[800px] mx-auto bg-branco p-[40px] rounded-[10px] shadow-[0_5px_15px_rgba(0,0,0,0.5)]">
                     
                     <h2 className="text-marrom-claro text-[32px] mb-[20px]">Devolução do Dízimo</h2>
                     
@@ -150,7 +197,7 @@ export default function Home(){
                         Sua contribuição ajuda a manter nossa igreja e nossos projetos sociais vivos. Seja um dizimista fiel!
                     </p>
                     
-                    <div className="mt-[30px] bg-branco p-[20px] rounded-[5px] border-l-[5px] border-mostarda">
+                    <div className="mt-[30px] bg-branco-amarelado p-[20px] rounded-[5px] border-l-[5px] border-mostarda">
                         <p className="text-[18px] text-cinza-escuro mb-[10px]">
                             <strong className="text-marrom-escuro">PIX (CNPJ):</strong> 00.000.000/0000-00
                         </p>

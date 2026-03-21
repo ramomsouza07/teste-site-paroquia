@@ -23,11 +23,11 @@ export default function ChurchCard({ imageUrl, imageText, title, description, li
                 className="h-[150px] w-full rounded-[5px] object-cover mb-[15px]" 
             />
             
-            <h3 className="text-[#331905] text-[24px] mb-[10px]">
+            <h3 className="text-center text-[#331905] text-[24px] mb-[10px]">
                 {title}
             </h3>
             
-            <p className="text-[#545454] text-[16px] flex-grow">
+            <p className="text-center text-[#545454] text-[16px] flex-grow">
                 {description}
             </p>
             
