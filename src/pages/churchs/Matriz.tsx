@@ -15,8 +15,7 @@ export default function Matriz(){
         <>
             <Header></Header>
             
-            <main className="w-[90%] lg:w-[60%] text-justify mx-auto py-[60px]">                
-                
+            <main className="w-[90%] lg:w-[60%] text-justify mx-auto py-[60px] bg-branco-amarelado m-[20px] p-[20px] rounded-[20px]">                
                 <h1 className="text-marrom-escuro text-[36px] md:text-[42px] font-bold mb-[30px] text-center leading-tight">
                     História do Santuário Diocesano de São Fidélis de Sigmaringa
                 </h1>
@@ -185,7 +184,19 @@ export default function Matriz(){
                         className="w-full rounded-[10px] shadow-[0_4px_10px_rgba(0,0,0,0.1)] object-cover" 
                     />
                 </div>
-
+                {/* Iframe do Google Maps da Praça de São Fidélis */}
+                <div className="mt-[45px] w-full h-[300px] rounded-[5px] overflow-hidden">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3708.43804203303!2d-41.74987148889658!3d-21.64681098007901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbdb307db6b488f%3A0xdbbd4bcd1b6dfe63!2zU2FudHXDoXJpbyBkZSBTw6NvIEZpZMOpbGlz!5e0!3m2!1spt-BR!2sbr!4v1774067359339!5m2!1spt-BR!2sbr" 
+                        width="100%" 
+                        height="100%" 
+                        style={{ border: 0 }} 
+                        allowFullScreen={false} 
+                        loading="lazy" 
+                        referrerPolicy="no-referrer-when-downgrade"
+                        title="Mapa da Igreja Matriz"
+                    ></iframe>
+                </div>
             </main>
 
             <Footer></Footer>
