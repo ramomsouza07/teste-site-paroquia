@@ -4,10 +4,10 @@ import '../../index.css'
 
 // Importando as imagens (verifique se os nomes e a pasta estão corretos no seu projeto)
 import imgAntiga from '../../assets/matriz/matriz1.png';
-import imgFlorenca from '../../assets/florenca.png';
+import imgFlorenca from '../../assets/matriz/florenca.png';
 import imgMatriz from '../../assets/matriz/foto-matriz.jpg';
-import imgRoma from '../../assets/roma.jpg';
-import imgSaoFidelis from '../../assets/sao-fidelis/Sao-Fidelis-Fiel-de-Sigmaringa-f.png';
+import imgRoma from '../../assets/matriz/roma.jpg';
+import imgSaoFidelis from '../../assets/sao-fidelis/sao_fidelis_rosto.png';
 import imgMatriz2 from '../../assets/matriz/foto-matriz-2.jpg';
 
 export default function Matriz(){

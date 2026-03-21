@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"; // Não esqueça de importar o Link!
-import temp from "../assets/matriz/temp.png"
+import temp from "../assets/outras/temp.png"
 import imgMatriz from "../assets/matriz/foto-matriz.jpg"
 import imgSeb from "../assets/sao_sebastiao/sao_sebastiao.png"
 import imgVic from "../assets/sao_vicente/sao_vicente_2.png"
