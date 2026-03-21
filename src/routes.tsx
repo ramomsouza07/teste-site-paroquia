@@ -11,6 +11,7 @@ import SagradaFamilia from './pages/churchs/SagradaFamilia';
 import Sebastiao from './pages/churchs/Sebastiao';
 
 import NotFound from './pages/NotFound';
+import Intencoes from './pages/Intencoes';
 
 export default function RoutesApp(){
     return(
@@ -23,6 +24,7 @@ export default function RoutesApp(){
                 <Route path="/capela-sao-sebastiao" element={<Sebastiao />} />
                 <Route path="/capela-sagrada-familia" element={<SagradaFamilia />} />
 
+                <Route path="/intencoes" element={<Intencoes />} />
                 <Route path="/servicos" element={<Services />} />
                 <Route path='/contatos' element={<Contacts/>} />
 

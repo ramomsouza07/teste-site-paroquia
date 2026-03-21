@@ -47,6 +47,7 @@ export default function Header() {
                         <li><Link to="/" onClick={() => handleScrollToSection('dizimo')} className="text-[16px] font-medium text-white transition-all duration-300 py-[5px] hover:[text-shadow:0px_4px_12px_rgba(255,255,255,0.6)]">Dízimo</Link></li>
                         {/* Novos links de navegação */}
                         <li><Link to="/servicos" className="text-[16px] font-medium text-white transition-all duration-300 py-[5px] hover:[text-shadow:0px_4px_12px_rgba(255,255,255,0.6)]">Serviços</Link></li>
+                        <li><Link to="/intencoes" className="text-[16px] font-medium text-white transition-all duration-300 py-[5px] hover:[text-shadow:0px_4px_12px_rgba(255,255,255,0.6)]">Intenções</Link></li>
                         <li><Link to="/contatos" className="text-[16px] font-medium text-white transition-all duration-300 py-[5px] hover:[text-shadow:0px_4px_12px_rgba(255,255,255,0.6)]">Contato</Link></li>
                     </ul>
                 </nav>
@@ -65,12 +66,13 @@ export default function Header() {
             </div>
 
             {/* 5. MENU MOBILE DROPDOWN */}
-            <div className={`min-[768px]:hidden w-full bg-[#331905] border-t border-[#A48267] overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-[400px] py-5' : 'max-h-0'}`}>
+            <div className={`min-[768px]:hidden w-full bg-[#331905] border-t border-[#A48267] overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-[450px] py-5' : 'max-h-0'}`}>
                 <ul className="flex flex-col items-center gap-5 m-0 p-0 list-none">
                     <li><Link to="/" onClick={() => setIsMenuOpen(false)} className="text-[18px] font-medium text-white">Home</Link></li>
                     <li><Link to="/" onClick={() => handleScrollToSection('comunidades')} className="text-[18px] font-medium text-white">Nossas Igrejas</Link></li>
                     <li><Link to="/" onClick={() => handleScrollToSection('dizimo')} className="text-[18px] font-medium text-white">Dízimo</Link></li>
                     <li><Link to="/servicos" onClick={() => setIsMenuOpen(false)} className="text-[18px] font-medium text-white">Serviços</Link></li>
+                    <li><Link to="/intencoes" onClick={() => setIsMenuOpen(false)} className="text-[18px] font-medium text-white">Intenções</Link></li>
                     <li><Link to="/contatos" onClick={() => setIsMenuOpen(false)} className="text-[18px] font-medium text-white">Contato</Link></li>
                     
                     <li className="flex gap-[20px] mt-2 pt-4 border-t border-[#A48267] w-[60%] justify-center">

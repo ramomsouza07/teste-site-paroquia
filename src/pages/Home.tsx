@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"; // Não esqueça de importar o Link!
 import temp from "../assets/matriz/temp.png"
 import imgMatriz from "../assets/matriz/foto-matriz.jpg"
 import imgSeb from "../assets/sao_sebastiao/sao_sebastiao.png"
@@ -43,6 +44,12 @@ export default function Home(){
                     >
                         Conheça Nossas Comunidades
                     </button>
+                    <Link 
+                        to="/intencoes" 
+                        className="bg-mostarda text-marrom-escuro ml-[20px] py-[12px] px-[30px] text-[18px] font-bold rounded-[5px] inline-block transition-colors duration-300 hover:bg-marrom-claro hover:text-branco"
+                    >
+                        Enviar Intenções
+                    </Link>
 
                 </div>
             </section>            
@@ -55,16 +62,15 @@ export default function Home(){
                 </h2>
                 
                 {/* O container protege o iframe e arredonda as bordas */}
-                <div className="w-full overflow-hidden rounded-[10px] shadow-[0_5px_15px_rgba(0,0,0,0.1)] bg-branco">
+                <div className="w-full overflow-hidden rounded-[10px] shadow-[0_5px_15px_rgba(0,0,0,0.1)] bg-branco mb-[40px]">
                     <iframe 
-                        src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FSao_Paulo&showPrint=0&showTabs=0&showNav=0&showTz=0&mode=AGENDA&src=ZDk5NmM1OTIxMjJhZjFkNWM0Zjc1MzNiN2U4NGFmYzBmOGEwOTg0NzM1YjNhZWVkNWQ3YTZkMTQ0ZDI3NWJhMkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23795548" 
+                        src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FSao_Paulo&showPrint=0&title=Par%C3%B3quia%20Santu%C3%A1rio%20S%C3%A3o%20Fid%C3%A9lis%20de%20Sigmaringa&mode=AGENDA&showNav=0&showTz=0&showCalendars=0&showTabs=0&src=YjhmMDc0ZjQ0MzE4MmU2NWYzYzBiNzM4ZDViYWQ3MzRiNGU4NDdmM2U3NDM4Zjk2NjMxZTJhYjA2MmNlMGZkN0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23795548" 
                         className="w-full border-0 h-[400px] md:h-[600px]" 
                         frameBorder="0" 
                         scrolling="no"
                         title="Calendário da Paróquia"
                     ></iframe>
                 </div>
-
             </section>
 
             {/* SEÇÃO NOSSA HISTÓRIA E DEVOÇÃO */}
@@ -211,12 +217,12 @@ export default function Home(){
                     
                     <div className="mt-[30px] bg-branco-amarelado p-[20px] rounded-[5px] border-l-[5px] border-mostarda">
                         <p className="text-[18px] text-cinza-escuro mb-[10px]">
-                            <strong className="text-marrom-escuro">PIX (CNPJ):</strong> 00.000.000/0000-00
+                            <strong className="text-marrom-escuro">PIX (CNPJ):</strong> 30.408.116/0024-11
                         </p>
                         <p className="text-[18px] text-cinza-escuro">
-                            <strong className="text-marrom-escuro">Banco:</strong> Nome do Banco <span className="text-marrom-claro mx-[5px]">|</span> 
-                            <strong className="text-marrom-escuro"> Ag:</strong> 0000 <span className="text-marrom-claro mx-[5px]">|</span> 
-                            <strong className="text-marrom-escuro"> Cc:</strong> 00000-0
+                            <strong className="text-marrom-escuro">Banco:</strong> Banco do Brasil <span className="text-marrom-claro mx-[5px]">|</span> 
+                            <strong className="text-marrom-escuro"> Ag:</strong> 0454 <span className="text-marrom-claro mx-[5px]">|</span> 
+                            <strong className="text-marrom-escuro"> Cc:</strong> 32573-0
                         </p>
                     </div>
                     
