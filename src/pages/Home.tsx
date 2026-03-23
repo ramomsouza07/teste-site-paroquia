@@ -184,7 +184,7 @@ export default function Home(){
                         imageText="Foto da Igreja"
                         title="Capela Nossa Senhora dos Milagres"
                         description="Comunidade localizada no distrito de Valão dos Milagres"
-                        linkUrl="/capela-nossa-senhora-milagres"
+                        linkUrl="/capela-nossa-senhora-dos-milagres"
                     />
 
                     <ChurchCard 
@@ -200,7 +200,7 @@ export default function Home(){
                         imageText="Foto da Igreja"
                         title="Capela Nossa Senhora de Fátima"
                         description="Comunidade localizada no bairro Coroados."
-                        linkUrl="/capela-nossa-senhora-fatima"
+                        linkUrl="/capela-nossa-senhora-de-fatima"
                     />
                 </div>
             </section>
