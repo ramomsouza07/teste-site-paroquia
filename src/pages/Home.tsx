@@ -3,6 +3,7 @@ import temp from "../assets/outras/temp.png"
 import imgMatriz from "../assets/matriz/foto-matriz.jpg"
 import imgSeb from "../assets/sao_sebastiao/sao_sebastiao.png"
 import imgVic from "../assets/sao_vicente/sao_vicente_2.png"
+import imgMilagres from "../assets/nsmilagres/igreja-valao-1.jpeg"
 import imgFamilia from "../assets/sagrada_familia/sagrada_familia.png"
 
 import Footer from "../components/Footer";
@@ -180,7 +181,7 @@ export default function Home(){
                     />
 
                     <ChurchCard 
-                        imageUrl={temp} 
+                        imageUrl={imgMilagres} 
                         imageText="Foto da Igreja"
                         title="Capela Nossa Senhora dos Milagres"
                         description="Comunidade localizada no distrito de Valão dos Milagres"

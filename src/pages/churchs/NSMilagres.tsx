@@ -2,8 +2,8 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 
 // Importações das imagens apontando para a pasta "outras"
-import imgFachada from '../../assets/outras/temp.png'; 
-import imgInterior from '../../assets/outras/temp.png'; 
+import imgFachada from '../../assets/nsmilagres/igreja-valao-1.jpeg'; 
+import imgInterior from '../../assets/nsmilagres/igreja-valao-2.jpeg'; 
 import imgExtra from '../../assets/nsmilagres/nossa_senhora_dos_milagres.jpg'; 
 
 export default function NSMilagres() {
@@ -58,7 +58,7 @@ export default function NSMilagres() {
                             <p className="text-marrom-escuro font-bold text-[16px] bg-branco-amarelado py-[10px] px-[20px] rounded-[5px] w-full border border-marrom-claro/20">
                                 R. José Custódia <br/>
                                 Valão dos Milagres - São Fidélis, RJ <br/> 
-                                28400-000
+                                28400-972
                             </p>
                             <p className="text-marrom-claro text-[15px] mt-[15px] font-bold">
                                 📍 A 26.5 km do Santuário.
